@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: linear-gradient(to bottom, lightblue, lightgreen, lightpink);">
+    
+    <center>
+          <h1 style="color: #70161E;font-size:xx-large; font-style: oblique;">Travel Registeration Form</h1>
+          <form>
+        <table border="4" cellpadding="15" cellspacing="0" bordercolor="sienna" width="600">
+            <thead >
+              <tr>
+                <td colspan="2">
+              <video src="AirPlane.mp4" controls autoplay height="350" width="100%" poster="flightPoster.jpg"></video></thead>
+
+                </td>
+
+              </tr>
+            <tr>
+                
+                <td>
+                    <!--------------------------------------------------------------------->
+                    <!------<video src="AirPlane.mp4" controls autoplay height="200" width="100%" poster="flightPoster.jpg"></video>
+                     ---------->
+                    <h1 style="background-color:#70161E; color: white;"> Personal Details</h1>
+
+                    <lable >Name:</lable>
+                    <input type="text"  placeholder="First Name" required> &nbsp;&nbsp;&nbsp;<br><br>
+                          
+                    <lable >Last Name:</lable>
+                    <input type="text"  placeholder="Last Name" required><br><br>
+
+                    <label>Email:</label>
+                    <input type="email" >&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                    
+                  <label >Contact no.:</label>
+                  <input type="tel" pattern="[0-9]{10}" placeholder="+91 xxxxx xxxxx"><br><br>
+
+                    <label>Date Of Birth:</label>
+                    <input type="date" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+                      <label for="gender">GENDER:</label>
+                      <input type="radio" name="gender">Male
+                      <input type="radio" name="gender">Female<br><br>
+
+
+            
+
+                    <label>Address:</label>
+                    <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your full address here"></textarea>
+                   <!-- <input type="text" placeholder="Street address">&nbsp;&nbsp;<br><br>
+                    <input type="text" placeholder="Street address Line 2"><br><br>
+                       ---><br><br>
+                    <label>City:</label>
+                     <input type="text" placeholder="city">&nbsp;&nbsp;<br><br>
+                     
+                        <label>PinCode</label>
+                        <input type="text" pattern="[0-9]{6}" placeholder=" enter 6-digit PIN code"><br><br>
+               
+                         <label>Adhar no.:</label>
+                         <input type="number">
+
+
+                     <!----------------------------------------------------->
+                     <h1 style="background-color:#70161E;color: white;"> Add Travel</h1>
+
+                     <label>Date:</label>
+                     <input type="date" placeholder="mm/dd/yyyy" required>&nbsp;<br><br>
+
+                    <label>Travel name:</label>
+                    <input type="text" placeholder="Ex.united Airlines" required> <br><br>
+
+                     <label>Travel number(optional):</label>
+                    <input type="number" placeholder="Ex.Flight234" > <br><br>
+
+
+                    <label for="city">From Location:</label>
+                    <input list="namecity" name="list" id="city">
+                    <datalist id="namecity">
+                        <option value="solapur"></option>
+                        <option value="pune"></option>
+                        <option value="mumbai"></option>
+                        <option value="delhi"></option>  
+                        <option value="banglore"></option>
+                        <option value="Goa"></option>
+                        <option value="hydrabad"></option>
+                       <option value="chennai"></option>
+                    </datalist>&nbsp;&nbsp;<br><br>
+                  
+
+                    <label for="Tocity">To Location:</label>
+                    <input list="Tonamecity" name="list" id="Tocity">
+                    <datalist id="Tonamecity">
+                        <option value="solapur"></option>
+                        <option value="pune"></option>
+                        <option value="mumbai"></option>
+                        <option value="delhi"></option>  
+                        <option value="banglore"></option>
+                        <option value="Goa"></option>
+                        <option value="hydrabad"></option>
+                       <option value="chennai"></option>
+                    </datalist><br><br>
+
+                    <label>Departure time:</label>
+                    <input type="datetime-local"><br><br>
+
+                    <label for="gender">International or Domestic Flight?:</label><br><br>
+                      <input type="radio" name="gender">International
+                      <input type="radio" name="gender">Domestic<br><br>
+
+                  
+                  <!------------------------------------------------------->
+                  
+                     <h1 style="background-color:#70161E;color: white;"> Other Details:</h1>
+                     
+
+                         <label style="color: #70161E;"><h2><b>Health & Safty</b></h2></label>
+                         <p>Please answer the following health and safety questions.</p><hr>
+
+                        <label for="medical">Do you have any medical conditions or allergies?:</label><br>
+                      <input type="radio" name="medical">International
+                      <input type="radio" name="medical">Domestic<br><br><hr>
+
+                      <label for="travlingwith">Are you traveling alone or with others?:</label><br>                           
+                     <input type="radio" name="travlingwith">Alone.
+                     <input type="radio" name="travlingwith">International<hr>
+
+                     <h2 style="color: #70161E;">Emergency Contact Information</h2><br>
+                     Please provide the name and phone number of an emergency contact person.<br><br>
+                     <label>Emergency Contact Number:</label>
+                      <input type="tel" pattern="[0-9]{10}" placeholder="+91 xxxxx xxxxx"><br><br>
+                      
+                      <label>Relationship:</label>
+                      <input type="text" ><br><br>
+                    
+                        <label>Name:</label>
+                      <input type="text"><br><br>
+                      
+                      <img src="Qr.png" height="140" width="140" align="right" hspace="100">
+                      
+                      <br><br><br><br><br><br><br>
+                      <!--------------------------->
+                  <center><br><br>
+                    <input type="submit" value="submit">&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="reset">  
+                  </center>
+
+               
+                 <!------------------------------------------------------------------>
+                </td>
+                <td><img src="travel2.jpg" width="700" height="1700"></td>
+            </tr>
+           
+        </table>
+        </form>
+    </center>
+</body>
+</html>
